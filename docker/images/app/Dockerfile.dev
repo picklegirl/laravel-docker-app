@@ -15,7 +15,6 @@ RUN apk update && apk add --no-cache --virtual buildDeps autoconf \
         wget \
         curl \
         bash \
-        redis \
         mysql-client \
         imagemagick \
         libmcrypt-dev build-base gnupg \
@@ -41,7 +40,7 @@ RUN chmod +x /usr/local/bin/install-php-extensions \
     && sync \
     && install-php-extensions \
         gd intl zip bz2 calendar gmagick \
-        memcache memcached redis \
+        memcache memcached \
         bcmath gmp uuid \
         mongodb pcov \
         uopz soap \
