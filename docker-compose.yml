@@ -6,8 +6,8 @@ services:
       dockerfile: ./docker/images/app/Dockerfile.dev
     volumes:
       - type: bind
-        source: ./app
-        target: /var/www/app
+        source: ./ysi
+        target: /var/www/ysi
     expose:
       - "9000"
     networks:
@@ -21,8 +21,8 @@ services:
       - "443:443"
     volumes:
       - type: bind
-        source: ./app
-        target: /var/www/app
+        source: ./ysi
+        target: /var/www/ysi
       - type: bind
         source: ./docker/data/web
         target: /var/log/nginx
