@@ -1,3 +1,4 @@
 [submodule "ysi"]
 	path = ysi
 	url = git@github.com:picklegirl/ysi.git
+	ignore = dirty
